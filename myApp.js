@@ -3,14 +3,15 @@ let app = express();
 
 console.log("Hello World");
 
+/*
 app.get("/", function(req, res) {
-    res.send('Hello Express');
-    resizeBy.send("oyoyoyoyooyoyoyoyoyo");
+    res.send("Hello Express");
   }
 );
+*/
 
 app.get("/", (req, res)=>{
-    res.sendFile(`views/index.html`);
+    res.sendFile(`${__dirname}/views/index.html`);
 })
 
 
