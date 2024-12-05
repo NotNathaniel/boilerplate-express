@@ -5,11 +5,12 @@ console.log("Hello World");
 
 app.get("/", function(req, res) {
     res.send('Hello Express');
+    resizeBy.send("oyoyoyoyooyoyoyoyoyo");
   }
 );
 
 app.get("/", (req, res)=>{
-    res.sendFile(`${__dirname}/views/index.html`);
+    res.sendFile(`views/index.html`);
 })
 
 
