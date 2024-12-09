@@ -9,6 +9,9 @@ app.get("/", function(req, res) {
   }
 );
 */
+app.get("/json", (req, res)=>{
+  res.json({"message": "Hello json"});
+})
 
 app.get("/", (req, res)=>{
     res.sendFile(`${__dirname}/views/index.html`);
